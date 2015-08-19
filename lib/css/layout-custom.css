@@ -1,0 +1,239 @@
+/*----------------------------------------------
+Author: Sarah Heim
+----------------------------------------------*/
+
+.hidden {
+	display:		none;
+}
+
+.ui-layout-pane {
+	padding:	0;
+	border:		1px solid #CDE;
+	overflow:	hidden; 
+}
+
+#layerswitcher, #legend, #graphOptions {
+	font-size: small;
+}
+
+.olImageLoadError {
+    display: none !important;
+/*    background: url(../img/blank_txt.png) !important;*/
+/*    background-color: transparent !important;*/
+}
+
+.header-bnr {
+	background: #ACE url(../img/hdr_bkgrd.png) 0 50% repeat-x;
+	color: #00467F;
+	font-weight: bold;
+	font-family:"Lucida Sans Unicode", Arial,sans-serif;
+	text-align: center;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.grpHdr {
+	background: #ACE url(../img/grp_bkgrd.png) 0 50% repeat-x;
+	font-weight: bold;
+	padding:4px 0px 2px;
+	color: #555;
+	
+}
+.tooltip {
+	width:12px;
+	height:12px;
+	padding:0px 3px;
+}
+.dataLinks {
+	font-size: 12px;
+	float: right;
+}
+
+.legendLayerRow {
+	font-weight: bold;
+}
+
+.content {
+	position: relative;
+	overflow: auto !important;
+}
+
+.footer {
+/*	background: #d6d6d6 url(../img/grayFt.png) 0 50% repeat-x;*/
+	background-color: #DDD;
+	padding: 3px 10px;
+	/*font-size: 0.6em;*/
+	font-size: x-small !important;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	border-top: 1px solid #888;
+}
+
+.smallFont { font-size: x-small; }
+/*.dialogBox {
+	font-size: 0.5em;s
+}*/
+
+.ui-dialog-content { font-size: 0.7em; }
+.ui-widget-overlay { opacity: 0.7; }
+.buffer-list li { padding:6px 0px; }
+
+#banner {
+/*	background-size: 22%;*/
+	/*background: url(../img/topbanner.png);
+	background-repeat:no-repeat;
+	background-position:top left; */
+	background-size:contain;
+	background-color:#FFF;
+}
+
+.ui-layout-resizer { background:	#CDE; }
+.ui-layout-resizer-dragging {
+	background:			#6C0 !important;
+	opacity: 			0.5 !important; 
+	filter: 			Alpha(Opacity=50) !important;
+}
+.ui-layout-resizer-dragging-limit { background: #d44848 !important; }
+
+
+/*	Layout Togglers  */
+/*.ui-layout-toggler {
+	background-color: #92B9E2;
+	opacity:		.70;
+	filter:			Alpha(Opacity=70);
+}
+.ui-layout-resizer-open-hover .ui-layout-toggler, 
+.ui-layout-toggler-hover {
+	opacity:		1;
+	filter:			Alpha(Opacity=100);
+}*/
+
+.ui-layout-toggler-hover {	border:		1px solid #BBB; }
+
+/*.ui-layout-toggler {
+	border:		1px solid #FFFFFF; 
+}*/
+
+.ui-layout-toggler-north-closed,
+.ui-layout-toggler-south-open	{ background: transparent url(../img/tog-dn.png) no-repeat center top; }
+.ui-layout-toggler-north-open,
+.ui-layout-toggler-south-closed	{ background: transparent url(../img/tog-up.png) no-repeat center bottom; }
+.ui-layout-toggler-east-closed, 
+.ui-layout-toggler-west-open	{ background: transparent url(../img/tog-lt.png) no-repeat right center; }
+.ui-layout-toggler-west-closed, 
+.ui-layout-toggler-east-open	{ background: transparent url(../img/tog-rt.png) no-repeat left center; }
+
+.popupContent, .popupDesc {
+	margin: 0px;
+	padding:0px;
+	font-size: 10px;
+}
+.popupDesc { 
+	color: #777777;
+/*	padding:4px 0px;	 */
+}
+.popupContent h2 {
+	margin: 0px;
+	padding:0px 0px 3px;
+	font-size: 12px;
+	text-align:center;
+	text-decoration:underline;
+}
+
+.popupContent h3 {
+	margin: 0px;
+	padding:6px 0px 0px;
+	font-size: 10px;
+}
+
+.popupContent table { 
+	border-collapse: collapse;
+/*	padding:0px 0px 4px;*/
+}
+.popupContent table td {
+	color: #333;
+	background: #E4E4FF;
+	border-top: 1px dashed #FFF;
+	border-bottom: 1px dashed #FFF;
+	padding: 0px 5px;
+}
+.popupContent table tr:hover td{
+	/*color:#000;
+	font-weight:bold;
+	background:#BCF;*/
+	color: #03C;
+	background: #ABF;
+	text-decoration:underline;
+}
+.noHiLi td {
+	color: #333  !important;
+	background: #E4E4E4  !important;
+	text-decoration:none  !important;
+}
+.popupContent table th {
+	background-color:#00467F;
+	color:white;
+} 
+
+.optionsTbl {
+	border: 6px ridge #FF0;
+	padding: 3px;
+/*	background-color: #FF9;*/
+	font-weight: bold;
+	font-size: 80%;
+}
+
+.tblKey {
+	border: 4px ridge #BBB;
+	padding: 3px;
+}
+.lblKey {
+	border: none;
+	font-style: italic;
+	padding-left: 8px;
+}
+.legNote {
+	font-size: 11px;
+	color: #D00;
+	font-weight: bold;
+	padding:0px 10px;
+}
+
+#lyrDialog a img {
+	border:2px solid blue;
+}
+
+#ui-datepicker-div { z-index: 3 !important;}
+#mapDate { width: 60px; }
+
+.busy {
+  height:100%;
+  width:100%;
+  background-color:#000000;
+/*  position:fixed;*/
+  position:absolute;
+  opacity:0.6;
+  filter: alpha(opacity = 80);
+  z-index:5000;
+  background-attachment: scroll;
+}
+
+.innerBusy {
+  position:absolute;
+  left:40%;
+  top:50%;
+  text-align:center;
+  margin-top:-50px;
+  margin-left:-50px;
+  z-index:5001;
+}
+.procTxt {
+	color:white;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 15px;
+	letter-spacing:1px;
+}

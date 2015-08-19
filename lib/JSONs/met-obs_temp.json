@@ -1,0 +1,31 @@
+{"type": "FeatureCollection", 
+"features": [
+	{"geometry": {"type": "Point", "coordinates": [-117.23900, 32.67500]}, 
+	"type": "Feature", 
+	"id": "SDL13", 
+	"properties": {
+		"T": 69, "T_group": 5, "RH": 74, "RH_group": 7,
+		"description": "Station ID:SDL13<br><b>Last Sampled: 2013-08-19 20:06:00 UTC</b><br>Provider: MesoWest<table><tr><th></th><th>Metric</th></tr><tr><td>Air Temp</td><td>20.56 °C</td></tr><tr><td>Dewpoint</td><td>15.76 °C</td></tr><tr><td>Humidity</td><td>74 %</td></tr></table>"}
+	}, 
+	{"geometry": {"type": "Point", "coordinates": [-120.61870, 34.56049]}, 
+	"type": "Feature", 
+	"id": "UP576", 
+	"properties": {
+		"T": 57, "T_group": 3, "RH": "", "RH_group": "x",
+		"description": "<b>Last Sampled: 2013-08-19 18:30:00 UTC</b><br>Provider: MesoWest<table><tr><th></th><th>Metric</th></tr><tr><td>Air Temp</td><td>13.89 °C</td></tr></table>"}
+	}, 
+	{"geometry": {"type": "Point", "coordinates": [-116.75800, 32.61500]}, 
+	"type": "Feature", 
+	"id": "DZRSD", 
+	"properties": {
+		"T": 84, "T_group": 6,"RH": 33, "RH_group": 3,
+		"description": "<b>Last Sampled: 2013-08-19 20:30:00 UTC</b><br>Provider: MesoWest<table><tr><th></th><th>Metric</th></tr><tr><td>Air Temp</td><td>28.89 °C</td></tr><tr><td>Dewpoint</td><td>10.98 °C</td></tr><tr><td>Humidity</td><td>33 %</td></tr></table>"}
+	}, 
+	{"geometry": {"type": "Point", "coordinates": [-116.69940, 32.66750]}, 
+	"type": "Feature", 
+	"id": "BAJC1", 
+	"properties": {
+		"T": 91, "T_group": 7, "RH": 30, "RH_group": 2,
+		"description": "<b>Last Sampled: 2013-08-19 19:50:00 UTC</b><br>Provider: RAWS<table><tr><th></th><th>Metric</th></tr><tr><td>Air Temp</td><td>32.78 °C</td></tr><tr><td>Dewpoint</td><td>12.90 °C</td></tr><tr><td>Humidity</td><td>30 %</td></tr></table>"}
+	} 
+]}

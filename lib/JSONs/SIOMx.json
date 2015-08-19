@@ -1,0 +1,19 @@
+{"type": "FeatureCollection", 
+ "features": [
+	{"type": "Feature",
+	 "geometry": {"type": "Point", "coordinates": [-117.2574,32.867]}, 
+	 "id": "SIOM1 - SIO Pier", 
+	 "properties": {"urlDesc": "http://neocoweb.ucsd.edu/cgi-bin/asbs/latestStats_SIOMx.py?inst_id=SIOM1"}
+        },
+	{"type": "Feature",
+	 "geometry": {"type": "Point", "coordinates": [-117.2382,32.70685]}, 
+	 "id": "SIOM2 - MARFAC", 
+	 "properties": {"urlDesc": "http://neocoweb.ucsd.edu/cgi-bin/asbs/latestStats_SIOMx.py?inst_id=SIOM2",
+			"description": "<p class='popupDesc'>MARFAC - Marine Facilities</p>"}
+        },
+	{"type": "Feature",
+	 "geometry": {"type": "Point", "coordinates": [-117.2289,32.88338]}, 
+	 "id": "SIOM3 - Fleet Services", 
+	 "properties": {"urlDesc": "http://neocoweb.ucsd.edu/cgi-bin/asbs/latestStats_SIOMx.py?inst_id=SIOM3"}
+        }
+]}
