@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>LA/LB Harbor</title>
+<!-- 	<link rel="stylesheet" href="./OpenLayers-2.12/theme/default/style.css" type="text/css"> -->
+<!-- 	<link rel="stylesheet" href="./OpenLayers-2.12/examples/style.css" type="text/css"> -->
+	<link type="text/css" rel="stylesheet" href="./lib/css/layout-default-latest.css" />
+	<link type="text/css" rel="stylesheet" href="./lib/css/jquery-ui-latest.css" />
+	<link type="text/css" rel="stylesheet" href="./lib/css/layout-custom.css" />
+	<script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false"></script>
+	<!-- <script type="text/javascript" src="./OpenLayers-2.12/lib/OpenLayers.js"></script> -->
+	<script type="text/javascript" src="./OpenLayers-2.12/OpenLayers_myFull2.js"></script>
+	<script type="text/javascript" src="./lib/js/jquery-latest.js"></script>
+	<script type="text/javascript" src="./lib/js/jquery-ui-latest.js"></script>
+	<script type="text/javascript" src="./lib/js/jquery.layout-latest.js"></script>
+	<script src="./Highcharts-2.3.3/js/highcharts.js"></script>
+	<script src="./Highcharts-2.3.3/js/highcharts-more.js"></script>
+	<script src="./Highcharts-2.3.3/js/modules/exporting.js"></script>
+
+	<script type="text/javascript" src="./lib/js/moment.js"></script>
+	<script type="text/javascript" src="./lib/js/moment-timezone-with-LA-2016j.js"></script>
+	<script type="text/javascript" src="./lib/js/layout-settings.js"></script>
+
+	<script type="text/javascript" src="./lib/js/OL_styles.js"></script>
+	<!-- <script type="text/javascript" src="./lib/js/charting.js"></script> -->
+	<script>
+	var lon = -118.24;
+	var lat = 33.53;
+	var zoom = 10;
+	</script>
+	<script type="text/javascript" src="./lib/js/layers_harbors.js"></script>
+	<script type="text/javascript" src="./lib/js/map_harbors.js"></script>
+</head>
+<body onload="init()">
+	<div id='wholeBusy' class='busy'>
+	  <div class='innerBusy'>
+	    <img id="spinner" src="./lib/img/big_spinner.gif">
+	    <p class='procTxt'>Initializing page...</p>
+	  </div>
+	</div>
+<!-- 	<div id="banner" class="ui-layout-north"></div> -->
+	<div class="ui-layout-west">
+		<div id="banner" style="height:70px;">
+			<a href="http://sccoos.org" target="_blank">
+				<img src="./lib/img/topbanner.png" style=" width: 240px; height: auto;">
+			</a>
+		</div>
+		<div class="header-bnr">Layers</div>
+		<div class="content">
+			<table id="layerswitcher" style="width:100%;"></table>
+		</div>
+		<div class="footer"><img src="./lib/img/tooltip.png" class="tooltip" title="The underlying map type can be changed"><b>Basemap:</b><select id="basemaps" class="smallFont"></select></div>
+	</div>
+<!-- <div class="ui-layout-south">	</div> -->
+	<div class="ui-layout-east">
+	<div id='layerBusy' class='busy'>
+	  <div class='innerBusy'>
+	  	<img src="./lib/img/big_spinner.gif">
+	  	<br><span class='procTxt'>Loading layer...</span>
+	  </div>
+	</div>
+		<div class="header-bnr">Legend<img src="./lib/img/tooltip.png" class="tooltip" title="Displayed layers' points can be selected via the map or it's link below. Each layer's legend can be minimized"></div>
+		<div id="legend" class="content">
+			<table id="layerLegend" style="width:100%;"></table>
+		</div>
+<!-- 		<div class="footer">Test footer</div> -->
+	</div>
+	<div class="ui-layout-center">
+		<div class="header-bnr" style="font-size: 150%;">Los Angeles / Long Beach Harbor Information Explorer</div>
+		<div id="map" class="content"></div>
+		<div class="footer">
+			<table style="width:100%">
+				<tr>
+					<td style="width:130px;"><b>Layer Info</b><img src="./lib/img/tooltip.png" class="tooltip" title="Layer to display info"></td>
+					<td>Current UTC:&nbsp;&nbsp;&nbsp;<label id="utcBrowserTime">mm/dd/yyyy hh:mm</label></td>
+					<td>Location Bookmarks:<img src="./lib/img/tooltip.png" class="tooltip" title="These shortcuts move the map to specific locations/zoom"></td>
+				</tr>
+				<tr>
+					<td>
+						<select id="queryLayer">
+		<!-- 					<option id="vectOptNone" value="none" selected="selected">Select Layer</option> -->
+							<option id="vectOpt" value="x">selected point</option>
+						</select>
+					</td>
+					<td>Current Pacific: <label id="pacificBrowserTime">mm/dd/yyyy hh:mm</label></td>
+					<td>
+						<a href="#" onclick="setMapCenter(-118.24, 33.53, 10);">LA/LB</a> &#8226;
+						<a href="#" onclick="setMapCenter(-118.7, 33.8, 8);">SoCal</a> &#8226;
+						<a href="#" onclick="setMapCenter(-124, 37, 6);">CA</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+<!--
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+-->
+</body>
+</html>
