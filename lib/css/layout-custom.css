@@ -9,7 +9,7 @@ Author: Sarah Heim
 .ui-layout-pane {
 	padding:	0;
 	border:		1px solid #CDE;
-	overflow:	hidden; 
+	overflow:	hidden;
 }
 
 #layerswitcher, #legend, #graphOptions {
@@ -39,7 +39,7 @@ Author: Sarah Heim
 	font-weight: bold;
 	padding:4px 0px 2px;
 	color: #555;
-	
+
 }
 .tooltip {
 	width:12px;
@@ -93,7 +93,7 @@ Author: Sarah Heim
 .ui-layout-resizer { background:	#CDE; }
 .ui-layout-resizer-dragging {
 	background:			#6C0 !important;
-	opacity: 			0.5 !important; 
+	opacity: 			0.5 !important;
 	filter: 			Alpha(Opacity=50) !important;
 }
 .ui-layout-resizer-dragging-limit { background: #d44848 !important; }
@@ -105,7 +105,7 @@ Author: Sarah Heim
 	opacity:		.70;
 	filter:			Alpha(Opacity=70);
 }
-.ui-layout-resizer-open-hover .ui-layout-toggler, 
+.ui-layout-resizer-open-hover .ui-layout-toggler,
 .ui-layout-toggler-hover {
 	opacity:		1;
 	filter:			Alpha(Opacity=100);
@@ -114,16 +114,16 @@ Author: Sarah Heim
 .ui-layout-toggler-hover {	border:		1px solid #BBB; }
 
 /*.ui-layout-toggler {
-	border:		1px solid #FFFFFF; 
+	border:		1px solid #FFFFFF;
 }*/
 
 .ui-layout-toggler-north-closed,
 .ui-layout-toggler-south-open	{ background: transparent url(../img/tog-dn.png) no-repeat center top; }
 .ui-layout-toggler-north-open,
 .ui-layout-toggler-south-closed	{ background: transparent url(../img/tog-up.png) no-repeat center bottom; }
-.ui-layout-toggler-east-closed, 
+.ui-layout-toggler-east-closed,
 .ui-layout-toggler-west-open	{ background: transparent url(../img/tog-lt.png) no-repeat right center; }
-.ui-layout-toggler-west-closed, 
+.ui-layout-toggler-west-closed,
 .ui-layout-toggler-east-open	{ background: transparent url(../img/tog-rt.png) no-repeat left center; }
 
 .popupContent, .popupDesc {
@@ -131,7 +131,10 @@ Author: Sarah Heim
 	padding:0px;
 	font-size: 10px;
 }
-.popupDesc { 
+.plainTbl {
+	font-size: 11px;
+}
+.popupDesc {
 	color: #777777;
 /*	padding:4px 0px;	 */
 }
@@ -149,7 +152,7 @@ Author: Sarah Heim
 	font-size: 10px;
 }
 
-.popupContent table { 
+.popupContent table {
 	border-collapse: collapse;
 /*	padding:0px 0px 4px;*/
 }
@@ -160,6 +163,27 @@ Author: Sarah Heim
 	border-bottom: 1px dashed #FFF;
 	padding: 0px 5px;
 }
+
+/*.content .plainTbl {overflow: hidden !important;}*/
+
+/*	needed 'tr' because of order of
+precedence to make more specific than ^  */
+.plainTbl tr td {
+	color: #333;
+	background: #FFF;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.plainTbl .soften td {
+	color: #AAA;
+}
+
+.plainTbl .bolder td {
+	color: #000;
+	font-weight: bold;
+}
+
 .popupContent table tr:hover td{
 	/*color:#000;
 	font-weight:bold;
@@ -168,15 +192,17 @@ Author: Sarah Heim
 	background: #ABF;
 	text-decoration:underline;
 }
-.noHiLi td {
+
+.noHiLi td, .plainTbl tr:hover td {
 	color: #333  !important;
 	background: #E4E4E4  !important;
 	text-decoration:none  !important;
 }
+
 .popupContent table th {
 	background-color:#00467F;
 	color:white;
-} 
+}
 
 .optionsTbl {
 	border: 6px ridge #FF0;
